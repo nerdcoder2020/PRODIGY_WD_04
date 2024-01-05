@@ -5,18 +5,21 @@ i<!DOCTYPE html>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>1st Portfolio Site via ME</title>
     <link rel="stylesheet" href="style.css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 <body>
 <div id="header">
     <div class = "container">
         <nav>   
             <img src="hmm.png" class ="logo">
-            <ul>
+            <ul id="sidemenu()">
                 <li><a href="#header">Home</a></li>
                 <li><a href="#About">About</a></li> 
                 <li><a href="#skills">Skills</a></li>
-                <i class=""fas fa-times"></i>  
+                <li><a href="#connect">Connect</a></li>
+                <i class="fa fa-times" onclick="closemenu()"></i> 
             </ul>
+            <i class="fa da-bars" onclick="openmenu()"></i>
         </nav>
         <div class="header-text">
             <p>A Web Developer</p>
@@ -32,7 +35,7 @@ i<!DOCTYPE html>
                 <img src="katana.jpg">
             </div>
             <div class="About-col-2">
-                <h1 class = "sub-title"></h1>About Me:</h1>
+                <h1 class = "sub-title">About Me:</h1>
                 <div class="tab-titles">
                     <p class="tab-links active-link" onclick="opentab('background')">Background</p>
                     <p class="tab-links" onclick="opentab('experience')">Experience</p>
@@ -40,9 +43,10 @@ i<!DOCTYPE html>
                 </div>
                 <div class="tab-contents active-tab" id="background">
                     <ul>
-                        <li><span>Programming Languages</span><br>HTML,CSS,Javascript</li>
-                        <li><span>Collaboration Tools</span><br>Communication and Collaboration with Tools like Slack, Trello, or Asana</li>
-                        <li><span>Soft skills</span><br>Communication,Negotiation,Time-Management</li>
+                        Growing up, I was always intrigued by technology,I wrote my first line of code <br>in high school.I knew IT was my calling. 
+                        Over the years, I've spent countless hours<br> learning new programming languages,working on projects, and overcoming coding<br>challenges.
+                        One of my proudest moments was when I built my first Blog.<br>Looking ahead, I aspire to use my skills to develop innovative solutions that 
+                        can make<br> a difference in people's lives.
                     </ul>
                 </div>
                 <div class="tab-contents" id="experience">
@@ -75,21 +79,21 @@ i<!DOCTYPE html>
                 <img src="Coding.jpeg">
                 <div class="layer1">
                     <h3>Programming Skills</h3>
-                    <p>Have Skills On Coding Front End</p>
+                    <p>Have solid Programming and Coding skills as a web developer, with expertise in various web technologies and languages.</p>
                 </div>
             </div>
             <div class="Time-Management">
                 <img src="Time1.jpeg">
                 <div class="layer2">
                     <h3>Time-Management</h3>
-                    <p>Due to my good time Time-Management,<br>I can do mutiple task</p>
+                    <pI>Able to prioritize tasks, set realistic deadlines, and deliver high-quality work within the given timeframe.</p>
                 </div>
             </div>
             <div class="Team-Work">
                 <img src="Team.jpeg">
                 <div class="layer3">
                     <h3>Team-Work</h3>
-                    <p>I can do anything alone</p>
+                    <p>I am a team player who can blend in with any group and bring out the best in Everyone.</p>
                 </div>
 
             </div>
@@ -104,14 +108,14 @@ i<!DOCTYPE html>
 <div id="connect">
     <div class="container">
         <div class="row">
-            <div class="connet-left">
+            <div class="connect-left">
                 <h1 class="sub-title">Connect with Me</h1>
-                <p><i class="fas fa-paper-plane"></i>anuragpatel0776@gmail.com</p>
-                <p><i class="fas fa-phone-square-alt"></i>9662155775</p>
+                <p><i class="fa fa-paper-plane"></i>anuragpatel0776@gmail.com</p>
+                <p><i class="fa fa-phone-square"></i>9662155775</p>
                 <div class="social-icons">
                     <a href="https://m.facebook.com/profile.php/?id=100040986752766" class="fa fa-facebook"></a>
-                    <a href="https://www.instagram.com/__.dokkodo?igsh=MWV5YXdkZmt4c2NnZQ=="><i class="fa-brands fa-instagram"></i></a>
-                    <a href="https://www.linkedin.com/in/anurag-patel21?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/__.dokkodo?igsh=MWV5YXdkZmt4c2NnZQ=="><i class="fa fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/anurag-patel21?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa fa-linkedin"></i></a>
                 </div>
 
             </div>
@@ -135,6 +139,17 @@ i<!DOCTYPE html>
         }
         event.currentTarget.classList.add("active-link");
         document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right="0";
+    }
+    function closemenu(){
+        sidemenu.style.right="-200px";
     }
 </script>
 </body>
