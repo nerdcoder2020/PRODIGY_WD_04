@@ -1,0 +1,141 @@
+i<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1st Portfolio Site via ME</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="header">
+    <div class = "container">
+        <nav>   
+            <img src="hmm.png" class ="logo">
+            <ul>
+                <li><a href="#header">Home</a></li>
+                <li><a href="#About">About</a></li> 
+                <li><a href="#skills">Skills</a></li>
+                <i class=""fas fa-times"></i>  
+            </ul>
+        </nav>
+        <div class="header-text">
+            <p>A Web Developer</p>
+            <h1>Hey, I'm <span style="color:#FF0000;">A</span><span>nurag <span style="color:#FF0000;">P</span>atel</span><br>from India</h1>
+        </div>      
+    </div>  
+</div>
+<!----------ABOUT---------->
+<div id="About">
+    <div class= "container">
+        <div class="row">
+            <div class="About-col-1">
+                <img src="katana.jpg">
+            </div>
+            <div class="About-col-2">
+                <h1 class = "sub-title"></h1>About Me:</h1>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('background')">Background</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="background">
+                    <ul>
+                        <li><span>Programming Languages</span><br>HTML,CSS,Javascript</li>
+                        <li><span>Collaboration Tools</span><br>Communication and Collaboration with Tools like Slack, Trello, or Asana</li>
+                        <li><span>Soft skills</span><br>Communication,Negotiation,Time-Management</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>[2020]Aug-Nov</span><br>Independently developed a blog website using WordPress  </li>
+                        <li><span>2022-[2023]-March</span><br>Actively engaging in self-directed learning for web development technologies.</li>
+                        <li><span>[2023][July-Nov]</span><br>Tech Stack Familiarity:
+                                Acquired familiarity with fundamental web development technologies, including HTML, CSS, and JavaScript.</li>
+                        <li><span>2023-Present</span><br>Excited to embark on hands-on projects and showcase them here soon.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2018-2019</span><br>10th(SSC),Divine Public School</li>
+                        <li><span>2020-2021</span><br>12th(HSC),Gurukrupa Vidhalaya</li>
+                        <li><span>[2021(October)]-Presnet</span><br>Ongoing study in B.Tech for IT Industry,Silver Oak University</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--------------------Skills-------------->
+<div id="skills">
+    <div class="container">
+        <h1 class="sub-title">My Skills</h1>
+        <div class="skills-list">
+            <div class="Coding">
+                <img src="Coding.jpeg">
+                <div class="layer1">
+                    <h3>Programming Skills</h3>
+                    <p>Have Skills On Coding Front End</p>
+                </div>
+            </div>
+            <div class="Time-Management">
+                <img src="Time1.jpeg">
+                <div class="layer2">
+                    <h3>Time-Management</h3>
+                    <p>Due to my good time Time-Management,<br>I can do mutiple task</p>
+                </div>
+            </div>
+            <div class="Team-Work">
+                <img src="Team.jpeg">
+                <div class="layer3">
+                    <h3>Team-Work</h3>
+                    <p>I can do anything alone</p>
+                </div>
+
+            </div>
+
+
+        </div>
+       
+    </div>
+</div>
+
+<!----------------Connect---------------->
+<div id="connect">
+    <div class="container">
+        <div class="row">
+            <div class="connet-left">
+                <h1 class="sub-title">Connect with Me</h1>
+                <p><i class="fas fa-paper-plane"></i>anuragpatel0776@gmail.com</p>
+                <p><i class="fas fa-phone-square-alt"></i>9662155775</p>
+                <div class="social-icons">
+                    <a href="https://m.facebook.com/profile.php/?id=100040986752766" class="fa fa-facebook"></a>
+                    <a href="https://www.instagram.com/__.dokkodo?igsh=MWV5YXdkZmt4c2NnZQ=="><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/anurag-patel21?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+
+            </div>
+                
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents= document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+</body>
+</html>
